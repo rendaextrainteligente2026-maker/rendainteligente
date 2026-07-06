@@ -1,0 +1,314 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia de Cursos</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#0f172a;
+    --secondary:#2563eb;
+    --accent:#3b82f6;
+    --light:#f8fafc;
+    --text:#334155;
+    --white:#ffffff;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:var(--light);
+    color:var(--text);
+}
+
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:clamp(2.2rem,5vw,4rem);
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+    opacity:.9;
+}
+
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2rem;
+    color:var(--primary);
+}
+
+.section-title p{
+    margin-top:10px;
+    color:#64748b;
+}
+
+.courses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.35s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.card-image{
+    position:relative;
+}
+
+.card-image img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#10b981;
+    color:white;
+    padding:8px 14px;
+    border-radius:50px;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.card-content p{
+    color:#64748b;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.features{
+    list-style:none;
+    margin-bottom:25px;
+}
+
+.features li{
+    padding:6px 0;
+}
+
+.features li::before{
+    content:"✓ ";
+    color:#10b981;
+    font-weight:bold;
+}
+
+.footer-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.price{
+    font-size:1.4rem;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.buy-btn{
+    background:var(--secondary);
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    background:var(--accent);
+}
+
+.footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.footer p{
+    opacity:.8;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>Transforme Conhecimento em Resultados</h1>
+    <p>
+        Escolha entre nossos cursos premium e desenvolva habilidades
+        que impulsionam sua carreira e seus negócios.
+    </p>
+</section>
+
+<div class="container">
+
+    <div class="section-title">
+        <h2>Nossos Cursos</h2>
+        <p>Selecione o treinamento ideal para você.</p>
+    </div>
+
+    <div class="courses">
+
+        <!-- CURSO 1 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/vivecominter.png" alt="Curso">
+                <span class="badge">Mais Vendido</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Metodo Viver de Internet</h3>
+
+                <p>
+                    Aprenda estratégias modernas para atrair clientes,
+                    aumentar vendas e construir autoridade online.
+                </p>
+
+                <ul class="features">
+                    <li>Acesso imediato</li>
+                    <li>Certificado</li>
+                    <li>Suporte ao aluno</li>
+                </ul>
+
+                <div class="footer-card">
+                   <!-- div class="price">R$ 197</div-->
+                    <a href="https://pay.kiwify.com.br/MCKpf7P?afid=ndCcnMro"
+                       target="_blank"
+                       class="buy-btn">
+                       Comprar
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CURSO 2 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/salarioextra.png" alt="Curso">
+                <span class="badge">Mais Vendido</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Salário Extra Online</h3>
+
+                <p>
+                    Aprenda estratégias modernas para atrair clientes,
+                    aumentar vendas e construir autoridade online.
+                </p>
+
+                <ul class="features">
+                    <li>Acesso imediato</li>
+                    <li>Certificado</li>
+                    <li>Suporte ao aluno</li>
+                </ul>
+
+                <div class="footer-card">
+                   <!-- div class="price">R$ 197</div-->
+                    <a href="https://pay.kiwify.com.br/rIKPITR?afid=X7mdCx3I"
+                       target="_blank"
+                       class="buy-btn">
+                       Comprar
+                    </a>
+                </div>
+            </div>
+        </div>
+<!-- CURSO 3 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/mapadaprosp.png" alt="Curso">
+                <span class="badge">Mais Vendido</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Mapa da Prosperidade</h3>
+
+                <p>
+                    Descubra estratégias para fortalecer sua mentalidade
+                    eliminar crenças limitantes e desenvolver hábitos que
+                    impulsionam 
+                </p>
+
+                <ul class="features">
+                    <li>Acesso imediato</li>
+                    <li>Certificado</li>
+                    <li>Suporte ao aluno</li>
+                </ul>
+
+                <div class="footer-card">
+                   <!-- div class="price">R$ 197</div-->
+                    <a href="https://pay.kiwify.com.br/4PvFO5i?afid=fnKiwr4f"
+                       target="_blank"
+                       class="buy-btn">
+                       Comprar
+                    </a>
+                </div>
+            </div>
+        </div>
+ </div>
+
+        
+        
+               
+
+            
+
+</div>
+
+<footer class="footer">
+    <p>© 2026 Academia de Cursos • Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
+```
